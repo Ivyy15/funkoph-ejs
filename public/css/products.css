@@ -1,0 +1,83 @@
+.products-side input {
+  background-color: black !important;
+  color: #FFFFFF;
+  outline-style: solid;
+}
+
+.products-side input:focus {
+  background-color: #ffffff;
+  color: #FFFFFF;
+}
+
+select {
+  background-color: #D3D3D3 !important;
+  width: 150px !important;
+  font-family: Inter !important;
+  font-weight: 700 !important;
+  text-align: left;
+}
+
+option {
+  color: black !important;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+input:checked {
+  background-color: black !important;
+}
+
+input::-webkit-input-placeholder {
+  color: white !important;
+}
+
+input:-ms-input-placeholder {
+  color: white !important;
+}
+
+input::-ms-input-placeholder {
+  color: white !important;
+}
+
+input::placeholder {
+  color: white !important;
+}
+
+.addcart-main button {
+  padding: 13px 13px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.pagination .command {
+  background-color: #030303;
+  color: #FFFFFF;
+  text-decoration: none;
+  float: left;
+  padding: 10px 16px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.pagination .num {
+  font-family: 'Playfair Display', serif;
+  color: #030303;
+  font-size: 20px;
+  text-decoration: none;
+  float: left;
+  padding: 10px 16px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.pagination a.active {
+  background-color: #030303;
+  color: #FFFFFF;
+}
+
+.pagination a:hover {
+  background-color: #030303;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=products.css.map */

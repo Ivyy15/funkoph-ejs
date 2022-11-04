@@ -1,0 +1,27 @@
+/* Homepage */
+.text-dark {
+  color: #030303;
+  font-size: 350%;
+}
+
+.arrow-icons i {
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+.arrow-icons i:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #505050;
+}
+
+.curtain-call h2, h4 {
+  color: #000000;
+  font-weight: 900;
+}
+
+.disney-collection h2, h6 {
+  color: #FFFFFF;
+  font-weight: 900;
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,24 @@
+{
+  "name": "asynch-activ-9-23",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivyy15/Asynch-Activ-9-23-22.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ivyy15/Asynch-Activ-9-23-22/issues"
+  },
+  "homepage": "https://github.com/Ivyy15/Asynch-Activ-9-23-22#readme",
+  "description": ""
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+    <%- include('./partials/header.ejs')  %>
+
+    <%- include('./partials/navbar.ejs')  %>
+
+  
+    <link href="/public/css/cart.css" rel="stylesheet" type="text/css">
+  
+    <link href="/public/css/main.css" rel="stylesheet" type="text/css">
+    <body>
+        
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="col-12">
+                        <img src="img/funkophblack.png" width="130">
+                    </div>
+
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a class="form-link" href="#">Information</a></li>
+                          <li class="breadcrumb-item"><a class="form-link" href="#">Shipping</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Payment</li>
+                        </ol>
+                    </nav>
+
+                    <div class="row my-3">
+
+                        <center> <p class="fs-5 mb-3"> Payment </p> </center>
+
+                        <div class="payment-shop d-grid gap-2 d-lg-block text-center my-1">
+                            <button type="button" class="btn btn-dark btn-lg fw-bold rounded-0">VISA/MASTERCARD</button>
+                            <button type="button" class="btn btn-dark btn-lg fw-bold rounded-0">GCASH</button>
+                            <button type="button" class="btn btn-dark btn-lg my-2 fw-bold rounded-0">PAYMAYA</button>
+                        </div>
+
+                    </div>
+
+                    
+                    <center> <p class="fs-5 mb-5"> OR </p> </center>
+
+                    <form class="row g-3" action="/shipping">
+                        <div class="col-12">
+                            <label for="billingAdd" class="form-label">Contact Information</label>
+                            <small class="text-dark float-end"> Already have an account? <a class="form-link" href="/sign-in" style="text-decoration: none;"> Log in. </a> </small>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Enter your e-mail address" required>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="emailNews">
+                              <label class="form-check-label" for="emailNews">Email me with news and offers</label>
+                            </div>
+                        </div>
+
+                        <label for="billingAdd" class="form-label mt-4 mb-n1">Billing Address</label>
+                        
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="inputShipAdd" placeholder="Enter your shipping address" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="inputOther" placeholder="Apartment, suite, etc. (Optional)">
+                        </div>
+
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="inputFirstN" placeholder="First Name" required>
+                          </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="inputLastN" placeholder="Last Name" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="inputRegion" placeholder="Region" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="inputZip" placeholder="ZIP Code" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="inputCity" placeholder="City" required>
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <div class="checkout-shop">
+                                <button type="submit" class="btn btn-dark btn-md w-75 my-3 fw-bold rounded-0">CONTINUE TO SHIPPING</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="row">
+                        <div class="d-flex bd-highlight">
+                        
+                        <div class="flex-fill bd-highlight">
+                            <div class="item-container col-md-3">
+                                <p class="fs-2 headings"> ITEM </p>
+                                <img src="img/cart/ironman.png" height="58" width="58" title="Iron Man" alt="Iron Man">
+                            </div>
+                        </div>
+                        
+                        <div class="flex-fill bd-highlight">
+                            <div class="col-md my-5">
+                                <p class="h4 mt-3 text-start"> Iron Man </p>
+                                <p class="h6 text-start"> Avengers Endgame </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-fill bd-highlight">
+                            <div class="col-md-3 ">
+                                <p class="fs-2 headings-1"> QTY </p>
+                                <div class="pagination my-4">
+                                    <a class="command" href="#">-</a>
+                                    <a class="num">1</a>
+                                    <a class="command" href="#">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-fill bd-highlight">
+                            <div class="price-container col-md-3 ">
+                                <p class="fs-2 headings-1"> PRICE </p>
+                                <p class="h4 my-4">PHP600.00 </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <div class="col-md-3 col-6">
+                                <p class="h6"> Subtotal </p>
+                                <p class="h6"> Shipping </p> 
+                                <p class="h4"> Total </p> 
+                        </div>
+                        
+                        <div class="col-md-9 col-6">
+                            <div class="float-end">
+                                <p class="h6 mx-5"> PHP600.00 </p>
+                                <p class="h6 mx-5"> PHP40.00 </p> 
+                                <p class="h4 mx-5"> PHP640.00 </p> 
+                            </div>
+                        </div>
+                    
+                </div>
+                    
+
+                </div>
+
+
+                </div>
+
+              
+            </div>
+
+       
+
+
+
+        <div style="flex-grow:1"></div>
+
+        <%- include('./partials/footer.ejs')  %>
+    
+            <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    </body>
+    </html>

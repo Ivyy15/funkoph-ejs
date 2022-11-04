@@ -1,0 +1,97 @@
+/* Shopping Cart */
+
+.addcart-main button {
+	padding: 10px 35px;
+    font-size: clamp(15px, 2vw, 25px);
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.cart-head {
+    font-size: 70px !important;
+}
+
+.like-head {
+    font-size: 40px !important;
+}
+
+.cont-shop button {
+	padding: 10px 10px;
+    font-size: clamp(15px, 2vw, 25px);
+    font-weight: 600;
+    color: #FFFFFF;
+    font-family: 'Inter', serif !important;
+}
+
+.checkout-shop button {
+    padding: 10px 40px;
+    font-size: clamp(15px, 2vw, 25px);
+    font-weight: 600;
+    color: #FFFFFF;
+    font-family: 'Inter', serif !important;
+}
+
+.payment-shop button {
+    font-size: 15px;
+    font-weight: 800;
+    color: #FFFFFF;
+    font-family: 'Inter', serif !important;
+} 
+
+.mb-n1 {
+    margin-bottom: -0.25rem !important;
+  }
+  
+  .pagination .command {
+    background-color: #030303;
+    color: #FFFFFF;
+    text-decoration: none;
+    float: left;
+    padding: 5px 6px;
+    margin: 0 auto;
+    font-weight: 700;
+  }
+  
+  .pagination .num {
+    color: #030303;
+    font-size: 20px;
+    text-decoration: none;
+    float: left;
+    padding: 5px 6px;
+    font-weight: 700;
+  }
+  
+  .pagination a.active {
+    background-color: #030303;
+    color: #FFFFFF;
+  }
+  
+  .form-control {
+    background-color: #EEEEEE !important;
+  }
+  
+  .form-check {
+    border-radius: 0;
+  }
+  
+  .form-check-input:checked {
+    border-color: #FF4A4A !important;
+    fill: #fFFFFF !important;
+    background-color: #FF4A4A !important;
+  }
+  
+  .form-link {
+    color: #030303 !important;
+  }
+  
+  .form-link:hover {
+    color: #000000 !important;
+  }
+
+button:hover {
+	background-color: #030303 !important;
+}
+
+nav a {
+    text-decoration: none;
+}

@@ -1,0 +1,31 @@
+/* Branches */
+.branch-head {
+  font-size: 70px !important;
+}
+
+select {
+  margin: 20px auto !important;
+  background-color: #D3D3D3 !important;
+  font-family: 'Inter', serif;
+  font-weight: 700 !important;
+  text-align: left;
+}
+
+option {
+  color: #030303 !important;
+  font-family: 'Inter', serif;
+  font-weight: 700;
+}
+
+.sign-up button {
+  padding: 30px 115px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #FFFFFF;
+  font-family: 'Inter', serif !important;
+}
+
+button:hover {
+  background-color: #030303 !important;
+}
+/*# sourceMappingURL=branches.css.map */
